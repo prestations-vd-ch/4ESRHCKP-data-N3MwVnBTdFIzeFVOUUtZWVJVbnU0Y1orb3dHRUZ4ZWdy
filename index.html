@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Vérifier l’authenticité d'un document émis par l’État</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- HEADER -->
+<header>
+    <img src="hauttete.png" class="top-banner">
+
+    <div class="header-inner">
+<a href="https://www.vd.ch/">
+    <img src="logo-etatdevaud.png" alt="État de Vaud">
+</a>
+    <a class="header-right"
+   href="https://prestations.vd.ch/100018/tree-login?goto=https:%2F%2Fprestations.vd.ch%2Fpub%2F101518%2FHNX8VEKZ%3Fdata%3DN3MwVnBTdFIzeFVOUUtZWVJVbnU0Y1orb3dHRUZ4ZWdyMDBjWDN6WGdISkZTamJLa2hndU4vMTk1amRWVGdmL3V1UkxqanZ1Q0RBTVRKbnhJY1E2SU4xYVUxTjdCU2tlaTdaVUxWU0NpMEJnM3hCVXhzUlV6b3h6bTVMenJDQmM">
+    <span class="user-icon"></span>
+    Se connecter
+</a>
+
+
+</div>
+    <div class="titre-haut">
+   Vérifier l’authenticité d'un document émis par l’État
+</div>
+</header>
+
+<div class="header-pattern">
+    <div class="breadcrumb" style="color: #2b6e62;">
+        <a href="https://www.vd.ch/">vd.ch</a> > <a href="https://www.vd.ch/prestation/verifier-lauthenticite-dun-document-emis-par-letat">Description de la prestation</a></div>
+
+    <div class="page-title">Document à valider</div>
+</div>
+
+
+<!-- tout le contenu sauf header/footer -->
+<div class="page-wrapper">
+
+
+<!-- BANDEAU BLEU CLAIR (VERSION CORRIGÉE) -->
+<div class="blue-banner">
+
+    <div class="blue-banner-text">
+        <p style="margin-bottom: 16px;">
+            La procédure de validation de votre document comporte 2 étapes :
+        </p>
+
+        <ol>
+            <li>Vous fournissez ou comparez les informations du document à vérifier, ainsi que le contenu des valeurs de contrôles.</li>
+            <li>Le système vous indiquera ensuite si ces informations sont conformes par rapport au document original émis par le service.</li>
+        </ol>
+
+        <p class="blue-banner-bottom">
+            Veuillez scanner le QR Code imprimé sur votre document ou saisir ci-dessous l’identifiant (ID)
+        </p>
+    </div>
+
+    <div class="qr-container">
+        <img src="document-verif-image.png" alt="Vérifier l’authenticité du document">
+    </div>
+
+</div>
+
+
+<!-- IDENTIFICATION -->
+<section class="identification-block">
+
+    <h2 class="section-title">Identification du document</h2>
+
+    <dl class="identification-dl">
+
+        <dt><span class="value-index">ID du document</span></dt>
+        <dd>4ESRHCKP</dd>
+
+        <dt><span class="value-index">Type de document</span></dt>
+        <dd>Extrait du registre des poursuites</dd>
+
+        <dt><span class="value-index">Émetteur</span></dt>
+        <dd>Office des poursuites du Jura-Nord vaudois</dd>
+
+        <dt><span class="value-index">Date d’émission du document</span></dt>
+        <dd>28.11.2025 14:45:64</dd>
+
+        <dt><span class="value-index">Date d’expiration du document</span></dt>
+        <dd>-</dd>
+
+    </dl>
+
+</section>
+
+
+
+
+<!-- VALEURS DE CONTRÔLE -->
+<section class="values-flex">
+
+    <div class="values-left">
+        
+        <!-- TABLEAU EXACTEMENT COMME IDENTIFICATION -->
+        <div class="values-table-block">
+                    <h2 class="section-title">Valeurs de contrôle</h2>
+
+            <dl class="identification-dl">
+<dt><span class="value-index">1</span> Numéro de l’extrait</dt>
+<dd>2025128000128</dd>
+
+<dt><span class="value-index">2</span> Prénom(s) et nom(s)</dt>
+<dd>Reger Sedik</dd>
+
+<dt><span class="value-index">3</span> Date de naissance</dt>
+<dd>01.07.1998</dd>
+
+<dt><span class="value-index">4</span> Montant total des poursuites (CHF)</dt>
+<dd>0.00</dd>
+
+<dt><span class="value-index">5</span> Montant total des actes de défaut de biens (CHF)</dt>
+<dd>0.00</dd>
+
+
+            </dl>
+        </div>
+
+<!-- BLOC COMPLET AVEC LA BARRE ROSE SUR TOUTE LA HAUTEUR -->
+<div class="verification-wrapper" id="verificationWrapper">
+
+    <!-- Message d’erreur (caché au début) -->
+    <p class="verification-error" id="checkbox-error">
+        Vous devez confirmer la vérification.
+    </p>
+
+    <!-- CHECKBOX + TEXTE (toujours visible) -->
+    <div class="checkbox-line">
+        <input type="checkbox" id="verifyCheckbox">
+        <label for="verifyCheckbox">
+            Le contenu des <span class="value-index">5</span> valeurs de contrôle listées ci-dessus 
+            correspond exactement aux éléments inscrits sur le document original. 
+            Les attributs d'identification du document correspondent également au document 
+            que j'ai entre les mains.
+        </label>
+    </div>
+
+</div>
+
+
+    </div>
+
+
+    <div class="values-right">
+        <h3 class="values-doc-title">Position des valeurs de contrôle sur votre document</h3>
+        <img src="base64.jpeg" alt="exemple document">
+    </div>
+
+</section>
+
+
+
+<!-- BANDEAU GRIS + BOUTON -->
+
+<div class="blue-banner blue-banner-cta">
+
+    <div class="blue-banner-text">
+        <p class="blue-banner-bottom">
+            Veuillez scrupuleusement vérifier si les informations ci-dessus correspondent aux données effectivement inscrites sur le document que vous détenez entre vos mains.
+        </p>
+
+        <p>
+            Ces informations seront ensuite comparées avec les données du document original émis par le service et, 
+            si elles correspondent à 100%, votre document pourra être considéré comme authentique.
+        </p>
+
+        <a class="btn-green" href="resultat.html">VÉRIFIER L’AUTHENTICITÉ DU DOCUMENT</a>
+    </div>
+</div>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <!-- BOUTON "HAUT" -->
+<div class="footer-top-btn" id="scrollTopBtn">HAUT <span>↑</span></div>
+
+    <div class="footer-inner">
+
+        <div class="footer-links">
+            <a href="https://prestations.vd.ch/pub/101098/">Demander de l'aide pour l'utilisation du portail sécurisé</a><br>
+            <a href="https://www.vd.ch/index.php?id=67827">Guide d'utilisation du portail sécurisé</a><br>
+            <a href="https://www.vd.ch/index.php?id=2015321">Conditions d'utilisation</a><br>
+            <a href="https://www.vd.ch/index.php?id=2015320">Bonnes pratiques en matière de sécurité informatique et de protection des données personnelles</a>
+        </div>
+
+        <!-- logo vertical à droite -->
+         <a href="https://www.vd.ch/">
+        <img class="footer-logo" src="logo-vaud.png" alt="Vaud logo">
+        </a>
+    </div>
+
+    <!-- bande zébrée + bande verte -->
+    <img src="footer-img.png" class="footer-img" alt="">
+
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
